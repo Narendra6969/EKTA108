@@ -1,0 +1,20 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+runConfig:
+  # Increase this value if you'd like to automatically spin up
+  # more instances in response to increased traffic.
+  maxInstances: 1
+
+# Provide the backend with a service account with access to other Google services.
+# https://firebase.google.com/docs/app-hosting/configure#service-account
+serviceAccount: acciassist@appspot.gserviceaccount.com
+
+# Explicitly declare the APIs the application needs to ensure they are enabled.
+requiredAPIs:
+  - id: generativelanguage.googleapis.com
+    reason: Required for the AI-powered features (Genkit).
+  - id: aiplatform.googleapis.com
+    reason: Required for underlying AI platform services.
+  - id: vision.googleapis.com
+    reason: Required for image analysis features in Genkit.

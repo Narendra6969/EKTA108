@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 204 10% 92.5%; /* A very light blue, almost white */
+    --foreground: 204 10% 10.5%;
+    --card: 204 10% 100%;
+    --card-foreground: 204 10% 10.5%;
+    --popover: 204 10% 100%;
+    --popover-foreground: 204 10% 10.5%;
+    --primary: 205.1 90.2% 48.2%; /* Calming Blue - #5DADE2 */
+    --primary-foreground: 204 10% 98%;
+    --secondary: 204 10% 96.1%;
+    --secondary-foreground: 204 10% 10.5%;
+    --muted: 204 10% 96.1%;
+    --muted-foreground: 204 10% 42.5%;
+    --accent: 165.1 76.5% 50.8%; /* Reassuring Teal - #45B39D */
+    --accent-foreground: 204 10% 10.5%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 204 10% 98%;
+    --border: 204 10% 89.5%;
+    --input: 204 10% 89.5%;
+    --ring: 205.1 90.2% 48.2%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 205.1 90.2% 48.2%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 165.1 76.5% 50.8%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 205.1 90.2% 48.2%;
+  }
+}
+ 
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  }
+}
